@@ -21,7 +21,7 @@ import {
 import { useColorScheme } from '@mantine/hooks';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 
-export default function App() {
+function App() {
 	const [tasks, setTasks] = useState([]);
 	const [opened, setOpened] = useState(false);
 
@@ -197,3 +197,5 @@ export default function App() {
 		</ColorSchemeProvider>
 	);
 }
+
+export default App;
